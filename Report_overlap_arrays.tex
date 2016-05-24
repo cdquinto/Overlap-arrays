@@ -1,0 +1,66 @@
+\documentclass[11pt]{report}
+\usepackage{geometry}
+\geometry{letterpaper, margin=0.7in}
+\usepackage{tgtermes}
+\usepackage{graphicx}
+\usepackage{verbatim}
+%%%\usepackage[spanish]{babel}
+\usepackage{subcaption}
+\usepackage{subfig} 
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{ tipa }
+\usepackage{ textcomp }
+\usepackage{ amssymb }
+%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\today
+
+Consuelo Dayzu Quinto
+
+\begin{center}
+\textbf{Overlap between SNP microarrays}
+\end{center}
+
+In order to calculate the number of SNPs in common between different microarrays, I obtained the list of SNPs for different arrays from the UCSC Genome Browser, and from the Illumina website:
+
+\begin{itemize}
+\item \textit{Affymetrix Genome-Wide Human SNP Array 6.0}: more than 906,600 SNPs derived from  HapMap and from the previous generation Mapping 500K and SNP 5.0  array. 
+\item \textit{Axiom Genome-Wide Human Origins 1 Array}: 629,443 SNPs from modern human populations and ancient hominids with content for 11 modern human populations; coverage in Neanderthal, Denisova, and chimpanzee
+genomes for comparison in ancient hominids and apes; and compatibility SNPs in mitochondria, Y chromosome. 
+\item \textit{Illumina HumanHap650Y}: 650,000 markers. The HumanHap650Y was derived from release 21 of the International HapMap Project.
+\item \textit{Illumina Human1M-Duo}: more than 1,100,000 tagSNPs.
+\item \textit{Illumina HumanOmni1-Quad v1}: 1,140,419 markers in a 4-sample format. The content has been derived from the 1,000 Genomes Project, all three HapMap phases, and recently published studies, including new coding variants identified by the 1000 Genomes Project and markers chosen in high-value regions of the genome: ABO blood typing SNPs, cSNPs, disease-associated SNPs, eSNPs, SNPs in mRNA splice sites, ADME genes, AIMs, HLA complexes, indels, introns, MHC regions, miRNA binding sites, mitochondrial DNA, PAR, promoter regions, and Y-chromosome.
+\item \textit{Illumina Infinium OmniExpress-24 Kit}: 713, 599 markers, derived from all 3 HapMap phases. 
+\item \textit{Illumina Infinium HumanOmni5-4 v1.1 BeadChip}: 4,284,426 SNPs. Markers were selected from HapMap and 1000 Genomes Project.
+\item \textit{Illumina Infinium Multi-Ethnic Global-8 Kit}: 1,779,819 SNPs. 
+\item \textit{Illumina Infinium Multi-Ethnic AMR/AFR BeadChip}: 1,430,141 SNPs. 
+%\item \textit{Illumina MEGA GLOBAL (version Consortium)}: 1,394,347 SNPs (based on the training run with the cluster GLOBAL). 
+\end{itemize}
+
+I used the information of the physical position of the markers to find the overlapping SNPs (\colorbox{Lavender}{get\_common\_snps\_doron.pl}), restricting the analysis to SNPs in the autosomes, and chromosome X and Y. 
+\\
+
+\begin{table}[ht]
+\centering
+\caption{SNPs in common between different arrays}
+\label{my-label}
+\begin{tabular}{|l||l|}
+\hline
+Arrays & MEGA GLOBAL \\ \hline \hline
+Affymetrix 6.0 & 165,795 \\ \hline
+Affymetrix Human Origins 1 & 105,771 \\ \hline
+Illumina 650Y & 211,845 \\ \hline
+Illumina Human1M-Duo & 308,002 \\ \hline
+Illumina Omni1-Q & 347,757\\ \hline
+Illumina Omni Express & 311,759 \\ \hline
+Illumina HumanOmni5 & 720,300\\ \hline
+MEGA AMR-AFR & 1,412,629 \\ \hline
+\end{tabular}
+\end{table}
+
+\end{document}
+
