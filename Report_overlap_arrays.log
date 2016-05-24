@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 MAY 2016 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 MAY 2016 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -401,7 +401,11 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-No file Report_overlap_arrays.aux.
+(./Report_overlap_arrays.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
 \openout1 = `Report_overlap_arrays.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -420,7 +424,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 18.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 18.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 18.
@@ -523,6 +527,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
+
+(./Report_overlap_arrays.out) (./Report_overlap_arrays.out)
 \@outlinefile=\write3
 \openout3 = `Report_overlap_arrays.out'.
 
@@ -549,34 +555,28 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
- [1
+) [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
+ [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
 
 (./Report_overlap_arrays.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
+Package rerunfilecheck Info: File `Report_overlap_arrays.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-Package rerunfilecheck Warning: File `Report_overlap_arrays.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `Report_overlap_arrays.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 9223 strings out of 493089
- 136989 string characters out of 6134842
- 231995 words of memory out of 5000000
+ 9231 strings out of 493089
+ 137166 string characters out of 6134842
+ 232244 words of memory out of 5000000
  12591 multiletter control sequences out of 15000+600000
  17403 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -586,10 +586,10 @@ ocal/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}</usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on Report_overlap_arrays.pdf (1 page, 85743 bytes).
+Output written on Report_overlap_arrays.pdf (2 pages, 87204 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
+ 35 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
