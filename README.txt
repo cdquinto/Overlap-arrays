@@ -71,6 +71,9 @@ sed -i 's/^/chr/g' release.snp_2
 sed -i 1d HumanOmni5-4v1_C.bed
 cut -f1,3,4 HumanOmni5-4v1_C.bed > HumanOmni5-4v1_C.bed_2
 
+sed -i 1d InfiniumOmni2-5-8v1-3_A1.bed
+cut -f1,3,4 InfiniumOmni2-5-8v1-3_A1.bed > InfiniumOmni2-5-8v1-3_A1.bed_2
+
 ###Final files: affy6.0.txt_2, annotOmniEx.txt_2, illumina1M-Duo.txt_2, illumina650.txt_2, illuminaOmni1-Q.txt_2, release.snp_2, InfiniumOmniExpress-24v1-2_A1.bed_2, entrenamiento_16sample.map_2, HumanOmni5-4v1_C.bed_2
 
 ###Files from the MEGA arrays (Consortium, and AMR-AFR)
@@ -119,7 +122,7 @@ perl get_common_snps_doron.pl maavp1v1.95.snps.rs.map_2 entrenamiento_clusterGLO
 perl get_common_snps_doron.pl Multi-EthnicAMR-AFR-8v1-0_A1.bed_2 Multi-EthnicGlobal_B1.bed_2
 ###1412629 SNPs
 
-for file in affy6.0.txt_2 annotOmniEx.txt_2 illumina1M-Duo.txt_2 illumina650.txt_2 illuminaOmni1-Q.txt_2 release.snp_2 InfiniumOmniExpress-24v1-2_A1.bed_2 Multi-EthnicAMR-AFR-8v1-0_A1.bed_2 Multi-EthnicGlobal_B1.bed_2 HumanOmni5-4v1_C.bed_2
+for file in affy6.0.txt_2 annotOmniEx.txt_2 illumina1M-Duo.txt_2 illumina650.txt_2 illuminaOmni1-Q.txt_2 release.snp_2 InfiniumOmniExpress-24v1-2_A1.bed_2 Multi-EthnicAMR-AFR-8v1-0_A1.bed_2 Multi-EthnicGlobal_B1.bed_2 HumanOmni5-4v1_C.bed_2 InfiniumOmni2-5-8v1-3_A1.bed_2
 do
 echo $file 
 perl get_common_snps_doron.pl ${file} entrenamiento_clusterGLOBAL.95.snps.rs.map.bed_2
@@ -135,10 +138,11 @@ done
 8) Multi-EthnicAMR-AFR-8v1-0_A1.bed_2 (b37): 1298920
 9) Multi-EthnicGlobal_B1.bed_2 (b37): 1333406
 10) HumanOmni5-4v1_C.bed_2 (b37): 610522
+11) InfiniumOmni2-5-8v1-3_A1.bed_2 : 466032
 
 ########
 
-for file in affy6.0.txt_2 annotOmniEx.txt_2 illumina1M-Duo.txt_2 illumina650.txt_2 illuminaOmni1-Q.txt_2 release.snp_2 InfiniumOmniExpress-24v1-2_A1.bed_2 Multi-EthnicAMR-AFR-8v1-0_A1.bed_2 HumanOmni5-4v1_C.bed_2
+for file in affy6.0.txt_2 annotOmniEx.txt_2 illumina1M-Duo.txt_2 illumina650.txt_2 illuminaOmni1-Q.txt_2 release.snp_2 InfiniumOmniExpress-24v1-2_A1.bed_2 Multi-EthnicAMR-AFR-8v1-0_A1.bed_2 HumanOmni5-4v1_C.bed_2 InfiniumOmni2-5-8v1-3_A1.bed_2
 do 
 perl get_common_snps_doron.pl ${file} Multi-EthnicGlobal_B1.bed_2
 done 
@@ -152,4 +156,5 @@ done
 7) InfiniumOmniExpress-24v1-2_A1.bed_2 (b37): 311759
 8) Multi-EthnicAMR-AFR-8v1-0_A1.bed_2 (b37): 1412629
 9) HumanOmni5-4v1_C.bed_2 (b37): 720300
+10) InfiniumOmni2-5-8v1-3_A1.bed_2: 521622
 
